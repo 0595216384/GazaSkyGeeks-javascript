@@ -1,0 +1,42 @@
+/* Style the game grid */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); /* Adjust based on your grid size */
+    gap: 10px;
+  }
+  
+  /* Style the cards */
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0; /* Adjust the colors */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  /* Style the restart button */
+  #restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #restart-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
